@@ -1,0 +1,26 @@
+insert text libre in dropdown choice
+
+$(document).ready(function(){
+
+    $("#addSchool").click(function(){
+    $("#schoolContainer").append('<option value="' + $("#newSchool").val() + '">' + $("#newSchool").val() + '</option>');
+    });
+
+});
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<select name="school" id="schoolContainer">
+    <option value="None" selected>None</option>
+    <option value="DeSoto">DeSoto</option>
+    <option value="Hillsboro">Hillsboro</option>
+    <option value="Grandview">Grandview</option>
+    <option value="Festus">Festus</option>
+    <option value="R-7">R-7</option>
+    <option value="Home-Schooled">Home-Schooled</option>
+</select>
+    
+    <input type="text" id="newSchool"/>
+    <input type="button" id="addSchool" value="Insert"/>
+	
+	link here
+	https://stackoverflow.com/questions/12223497/html-dropdown-list-with-user-input-field
